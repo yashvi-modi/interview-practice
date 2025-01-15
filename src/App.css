@@ -1,0 +1,155 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.App {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+}
+
+.buttons button {
+  padding: 12px 18px;
+  margin-left: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Question Section */
+.question-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.question-item {
+  margin-bottom: 30px;
+}
+
+.question-item p {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.answer {
+  background-color: #f1f8e9;
+  border-left: 5px solid #4caf50;
+  padding: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.toggle-answer {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-answer:hover {
+  background-color: #218838;
+}
+
+.action-buttons button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .buttons button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .question-card {
+    padding: 20px;
+  }
+
+  .question-item p {
+    font-size: 18px;
+  }
+
+  .answer {
+    font-size: 16px;
+  }
+
+  .toggle-answer, .action-buttons button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
